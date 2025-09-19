@@ -1,0 +1,74 @@
+📚 JavaScript Notes – Type Conversion
+
+JavaScript ek dynamically typed language hai → iska matlab tumhe variable declare karte waqt type batana nahi padta. Lekin JS khud hi type conversion karta hai jab tum operations perform karte ho.
+
+
+🌱 1. Type Conversion ke Do Types
+
+Implicit Conversion (Type Coercion)
+→ JS automatically type convert karta hai.
+
+Explicit Conversion
+→ Tum khud function use karke type change karte ho (Number(), String(), Boolean()).
+
+🌱 2. Implicit Conversion (Type Coercion)
+🔹 Case 1: String + Number
+console.log("1" + 1); // "11"
+console.log("10" + 5); // "105"
+
+👉 Agar koi operand string hai aur tum + operator use karte ho → JS sabko string me convert karke concatenate kar deta hai.
+
+
+🔹 Case 2: Number + Number
+
+console.log(1 + 1); // 2
+console.log(10 + 20); // 30
+
+
+🔹 Case 3: String with -, *, /
+
+console.log("10" - 5); // 5
+console.log("6" * "2"); // 12
+console.log("20" / "2"); // 10
+👉 Yahaan pe - * / me JavaScript string ko number me convert karta hai (automatic coercion).
+
+
+🔹 Case 4: Boolean conversion
+
+console.log(true + 1);  // 2   (true → 1)
+console.log(false + 1); // 1   (false → 0)
+
+🔹 Case 5: Null / Undefined
+
+console.log(null + 1);      // 1   (null → 0)
+console.log(undefined + 1); // NaN (Not a Number)
+
+🌱 3. Explicit Conversion
+🔹 String Conversion
+
+String(123);   // "123"
+(123).toString(); // "123"
+
+
+
+    //Number conversion
+
+    Number("123");  // 123
+    +"123";         // 123
+    parseInt("123"); // 123
+    parseFloat("12.34"); // 12.34
+
+
+🔹 Boolean Conversion   
+Boolean(1);   // true
+Boolean(0);   // false
+Boolean("");  // false
+Boolean("hi"); // true
+
+
+🌱 4. Special Cases (Interview Favorite 💡)
+
+console.log([] + []);     // ""  (empty string)
+console.log([] + {});     // "[object Object]"
+console.log({} + []);     // 0  (strange behavior)
+console.log("5" - - "5"); // 10  (string → number, double minus = plus)
