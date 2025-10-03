@@ -39,6 +39,7 @@ console.log(amount);
 
 
 //Checking the Notes system for while entring the amounts 
+// This code is for checking the note which is greater than 500  so it  calculate the  show the note it can be make it here
 
 
 let  Amount = parseInt(prompt("Enter Your Amount"));
@@ -85,4 +86,24 @@ if (Amount === 1) {
   console.log(`"1 note :",${Amount}`)
   
 }
+
+
+
+
+=> Ternary Operators Nested 
+
+const age =parseInt(prompt("Enter Your Age"))   
+const  result=age<=18?"Under Eighteen": age<=30?" Under Thirty":"You Are overAged";
+console.log(result);
+
+
+=> Nested For operator that is  Zero  Positive and Check the Negative
+const value=parseInt(prompt('Enter Value !')) 
+const  result=value >0 ? "Positive" : value <0 ? "Negative": "Zero"
+console.log(result);
+
+
+
+
+
 
