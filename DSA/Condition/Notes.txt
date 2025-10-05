@@ -12,7 +12,7 @@ console.log((discount = (discount * price) / 100));
 
 
 
-
+------------------------------------------------------------------------
 second Tricky Question To Solve:
 
 
@@ -37,7 +37,7 @@ console.log(amount);
 
 
 
-
+------------------------------------------------------------------------
 //Checking the Notes system for while entring the amounts 
 // This code is for checking the note which is greater than 500  so it  calculate the  show the note it can be make it here
 
@@ -89,18 +89,106 @@ if (Amount === 1) {
 
 
 
-
+------------------------------------------------------------------------
 => Ternary Operators Nested 
 
 const age =parseInt(prompt("Enter Your Age"))   
 const  result=age<=18?"Under Eighteen": age<=30?" Under Thirty":"You Are overAged";
 console.log(result);
 
+------------------------------------------------------------------------
+=> we have the switch and if condition => here when we have very complex   problem so we use if like if check logical comparsion ,
+
+
 
 => Nested For operator that is  Zero  Positive and Check the Negative
 const value=parseInt(prompt('Enter Value !')) 
 const  result=value >0 ? "Positive" : value <0 ? "Negative": "Zero"
 console.log(result);
+
+------------------------------------------------------------------------
+const user = +prompt("Enter Your Age");
+switch (user) {
+  case 10:
+  console.log("Your Age is 10")
+  break;
+  case 20:
+    console.log("Your age is 20");
+    break;
+  case 30:
+    console.log("Your age is 30");
+    break;
+
+  default:
+    console.log("Invlide");
+}
+
+
+
+=>Switch With Multiple Condition 
+
+
+const user = +prompt("Enter Your Age");
+switch (user) {
+  case 10:
+  case 20:
+  case 30:
+    console.log("Your age is 30");
+    break;
+case 50:
+case 60:
+case 70:
+
+console.log('Above than 70')
+break;
+
+
+  default:
+    console.log("Invlide");
+}
+
+
+
+------------------------------------------------------------------------
+
+let value = 0.2 + 0.3 +0.1;
+
+switch (value) {
+  case 0.4:
+    console.log("good Morning");
+    break;
+
+  case 0.5:
+    console.log("Good aferNoon");
+    break;
+
+  case 0.6:
+    console.log("Good Night");
+    break;
+
+  default:
+    console.log("Sorry");
+
+    break;
+}
+
+
+
+
+
+=>   Short Circuit code 
+
+USING AND 
+console.log("True" && "True")  //it will return the True
+console.log("" && "True")  //it will return the Empty String
+console.log("True" && "")  //it will return the Empty String
+
+
+USING OR
+console.log("FIRST" || "SECOUND")  //it will return the FIRST because it check  for if one be true
+console.log("" || "SECOUND")  //it will return the SECOUND because it  will cekc or foirst conditon  if it true that will got to next con diton 
+console.log("FIRST" || "")  //it will return the FIRST because the first conditon is true
+
 
 
 

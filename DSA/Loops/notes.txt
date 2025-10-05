@@ -1,0 +1,49 @@
+ Loop Working:
+
+=>First it check the starting point 
+=>check the codition
+=>go to body
+=>for  next loop it  incremented by one then check the condition for next loops 
+
+for (i=1; i < 10; i++) {
+  console.log(i);
+}
+console.log(`The Falsy value is ${i}`);?//so it is printing the falsy value
+
+--------------------------------------------------------------------
+=> Question for Reverse Numbers
+
+Basic Reverse loop
+for (i=700; i>=100; i--) {
+  console.log(i);
+}
+
+--------------------------------------------------------------------
+
+=> Sum of Natural Number?
+
+
+const num = Number(prompt("Enter Your Number !"));
+
+if (isNaN(num)) {
+  console.log("Invalide Number");
+} else {
+  if (num > 0) {
+    let sum = 0;
+    for (let i = 1; i <= num; i++) {
+      sum += i;
+    }
+    console.log(sum);
+  } else {
+    console.log("Sum Should be Positive");
+  }
+}
+
+--------------------------------------------------------------------
+
+
+
+
+
+
+
