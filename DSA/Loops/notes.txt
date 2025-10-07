@@ -195,7 +195,36 @@ if (isNaN(number)) {
 
 ------------------------------------------------------------------------------------
 
-Strong Number 
+=> How to Code for Strong Number 
+
+Algorithem
+
+START
+  INPUT num
+  SET temp = num
+  SET sum = 0
+
+  WHILE temp > 0 DO
+      rem = temp % 10
+      fact = 1
+      FOR i = 1 TO rem DO
+          fact = fact * i
+      END FOR
+      sum = sum + fact
+      temp = temp / 10 (integer division)
+  END WHILE
+
+  IF sum == num THEN
+      PRINT "Strong Number"
+  ELSE
+      PRINT "Not a Strong Number"
+  END IF
+STOP
+
+
+          full javascript coding 
+
+
 
 let number = Number(prompt("Enter Your Number!"));
 
@@ -203,24 +232,25 @@ if (isNaN(number)) {
   console.log("Invalid Number!");
 } else {
   if (number > 0) {
-    let sum = 0; // move outside loop
-    let temp = number; // store original value
+    let sum = 0;
+    let temp = number; // store original number (optional)
 
-    while (temp > 0) {
-      let rem = temp % 10;
-      let fact = 1;
+    while (number > 0) {
+      let remainder = number % 10;
+      let fact = 1; // reset factorial every time
 
-      // Correct factorial loop
-      for (let i = 1; i <= rem; i++) {
+      for (let i = 1; i <= remainder; i++) {
         fact *= i;
       }
 
       sum += fact;
-      temp = Math.floor(temp / 10);
+      number = Math.floor(number / 10);
     }
 
-    console.log("Sum of factorial of digits:", sum);
+    console.log("Sum of factorials of digits:", sum);
   } else {
     console.log("Must be positive and greater than 1");
   }
 }
+
+------------------------------------------------------------------------------------
