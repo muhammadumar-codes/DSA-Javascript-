@@ -254,3 +254,45 @@ if (isNaN(number)) {
 }
 
 ------------------------------------------------------------------------------------
+let  number;
+do {
+number  =Number(prompt("Enter Your value!"))
+  
+} while (number!==0);
+
+_---------------------------------------------------------------------------------------------------
+
+Question how to make the Quesss NO =>
+
+let exit;
+do {
+  const number = Number(Math.floor(Math.random() * 10) + 1);
+  let guess;
+
+  while (guess !== number) {
+    guess = Number(prompt("Enter Your Guess Number!"));
+    if (guess < 1 || isNaN(guess) || guess > 10) {
+      console.log("Please Write the the correct Number !");
+      continue;
+    } else if (guess > number) {
+      console.log("The number You Selected is too high ");
+    } else if (guess < number) {
+      console.log("The number is two Low");
+    } else {
+      console.log("Congratulation You Guess the Correct value  🎉🎉  ", guess);
+    }
+  }
+  exit = prompt("Do You Want to Start Again (yes/No)");
+} while (exit !== "No");
+
+-------------------------------------------------------------------------------------------------
+=> Nadia Tara sorri  😂 Tara Bagoo 🤦‍♀️ Program End on G
+
+
+let  user;
+do {
+  user=  prompt('Enter Your ...')
+
+} while (user!=="G");
+
+-------------------------------------------------------------------------------------------------
