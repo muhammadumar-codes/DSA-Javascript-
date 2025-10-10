@@ -1,0 +1,82 @@
+By Def : 
+Array is the Linear Datastructure which store multiple values on continous manners 
+Linear Mean  => to get the Data next to next Like  
+
+ 
+
+const  array =[]
+array.push("Hellow")
+array.push(1) //it is  to putting  teh value ot it 
+array.pop()
+array.pop() // it is  delete teh value  .
+console.log(array[0]);// accessihig of index.
+
+
+
+// Question :How to assign the vlue ot 5 index in array
+
+// Yes , it is possible to keep the value on 5  index
+array[5]=100000;
+console.log(array);
+
+
+// Question : Can we make the array by new Array 
+// yes
+
+const first=new Array(3)//  it is them point Here we have define the length of array...
+first.push("HI")
+console.log(first)
+
+
+//simple  Example to take the 5 amount to store it in array
+let ans = [];
+for (let i = 1; i <= 5; i++) {
+  let value = Number(prompt("Enter Your value ."));
+  ans.push(value);
+}
+const totalAmount = ans.reduce((acc, curr) => {
+  return acc + curr;
+},0);
+
+console.log("The Total Amount of array is  => ", totalAmount);
+-------------------------------------------------------------------------------------------------
+
+Question : How to sum of n elments in array
+
+let sum = 0;
+const array = [2, 3,5 ];
+for (let i = 0; i < array.length; i++) {
+sum+=array[i];
+}
+console.log(sum);
+
+-------------------------------------------------------------------------------------------------
+// Quetion How to = sum  fo the elments
+// 2nd methods to solev this problem
+
+
+const array = [2, 3, 5, 45, 5];
+const sum = array.reduce((acc, curr) => {
+  return acc + curr;
+}, 0);
+console.log("The sum of  N element is   : " , sum)
+-------------------------------------------------------------------------------------------------
+Question: How to check the maximum number in the array :
+Solution : instead of ternary operator you can also used the if condition....
+let array = [20];
+let maximum = array[0];
+for (let i = 1; i <= array.length; i++) {
+  array[i] > array[0] ? (maximum = array[i]) : "Sorry Not Found !";
+}
+console.log(`The Maximum Value is :${maximum}`);
+-------------------------------------------------------------------------
+Question : How to check the minemum number ?
+
+let array = [90, 40, 20, 4,"2", 0];
+let manimum = array[0];
+for (let i = 1;i<array.length ; i++) {
+  array[i]<array[0]?manimum=array[i]:"Not found"
+}
+console.log(manimum);
+
+-------------------------------------------------------------------------
