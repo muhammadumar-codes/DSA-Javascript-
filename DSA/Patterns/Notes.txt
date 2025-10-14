@@ -1,4 +1,4 @@
-if we want to print the multiple data on one line we will use the (process.std.write())
+	if we want to print the multiple data on one line we will use the (process.std.write())
 for taking input on terminal in javascript so we will use to install the pakege process-sync
 
 Examples 
