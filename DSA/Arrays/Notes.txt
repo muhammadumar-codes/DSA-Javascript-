@@ -124,19 +124,40 @@ while(i!==j){
   j++
 }
 console.log(array);
+-------------------------------------------------------------------------
+Reverse The array without Extra space !
+
+let array = [1, 2, 3, 4, 5];
+let i = 0,
+  j = array.length - 1;
+while (i < j) {
+  [array[i], array[j]] = [array[j], array[i]];
+  i++;
+  j--;
+}
+console.log(array);
+
+-------------------------------------------------------------------------
+
+Question: We have taken the two varibles i ,j from starting of Array
+Question is that if during itration if value Equal to Zero it must  to move to swap with (j)
+if it is 1 it must to move forward to swap 
+
+Solution:
+
+const array = [1, 1, 0, 1, 0, 0, 1, 0, 0];
+let i = 0,
+  j = 0;
+while (i < array.length) {
+  if (array[i] === 0) {
+    let temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+    j++;
+  }
+  i++;
+}
+console.log(array);
 
 
 -------------------------------------------------------------------------
-Reverse Array without Using Extra space;
-
-let array = [1, 2, 3, 4, 5, 6];
-let i=0;j=array.length-1
-while (i<j) {
-  [array[j],array[i]]=[array[i],array[j]]
-  j--
-  i++
-  
-
-  
-}
-console.log(array)

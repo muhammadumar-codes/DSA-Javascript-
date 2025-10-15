@@ -195,3 +195,69 @@ console.log("FIRST" || "")  //it will return the FIRST because the first condito
 
 
 
+const age = Number(prompt("Enter Your age"));
+if (isNaN(age) || !age) {
+  console.log("Please Put the correct value");
+} else {
+  if (age <= 14) {
+    console.log("under 18");
+  } else if (age >= 14 && age <= 30) {
+    console.log("Your are adult");
+  } else {
+    console.log("Your are Old");
+  }
+}
+
+
+--------------------------------------------------------------------
+
+if ("0") console.log("truthy"); // "0" is a non-empty string → truthy
+if (0) console.log("won’t run");
+
+Condition is coerced to Boolean using JS truthy/falsy rules.
+
+Falsy values: false, 0, '', null, undefined, NaN.
+
+Everything else → truthy.
+
+Example:
+
+---------------------------------------------
+The fall though in Condition using switch  it happeded without using the break
+
+
+let fruit = "apple";
+switch (fruit) {
+  case "apple":
+    console.log("Apple!");
+  case "banana":
+    console.log("Banana!");
+  default:
+    console.log("Other fruit!");
+}
+// Output:
+// Apple!
+// Banana!
+// Other fruit!
+
+
+---------------------------------------------
+
+using Ternary operators
+
+
+const age = Number(prompt("Enter Your Age"));
+
+age <= 14
+  ? console.log("You are Under 18")
+  : age >= 15 && age <= 30
+  ? console.log("Your are Tenagor")
+  : console.log("You are old");
+
+
+
+
+---------------------------------------------
+You can also use teh short circuit for it
+&& || 
+
