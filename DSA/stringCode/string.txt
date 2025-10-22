@@ -221,7 +221,71 @@ for (let i=0;i< str.length;i++){
     
 }
 -------------------------------------------------------------------------------------------------------------
+ Reverse The string :
 
+ let names= "Muhammad-Umar";
+let  reverse =" "
+for(let i =names.length;i>=0;i--){
+   reverse+=names.charAt(i)
+    
+}
+console.log(reverse);
+
+------------------------------------------------------------------------------------------------------------
+Code For Palendram Number "
+
+function palindramChecker(params) {
+  let str = prompt("Enter What is in Your Mind !");
+  let reverse = "";
+  if (!str) {
+    console.log("Invlide Input !");
+    return;
+  }
+  for (let i = str.length - 1; i >= 0; i--) {
+    reverse += str.charAt(i);
+  }
+
+  const palindram =
+    reverse === str ? "This is Palenram Number !" : "Not Palendram";
+  console.log(palindram);
+}
+
+palindramChecker();
+
+---------------------------------------------------------------------------------------------------------
+
+Best Way The Palendram  :
+
+function PalendramChecker() {
+  const input = prompt("Enter Your Value !");
+  let palendram = true;
+  if (!input) {
+    console.log("Invlide Input !");
+    return;
+  } else {
+    let i = 0,
+      j = input.length - 1;
+    while (i < j) {
+      if (input.charAt(i) !== input.charAt(j)) {
+        palendram = false;
+        break;
+      }
+    }
+    palendram = true;
+  }
+
+  // condition to check the palendram value.
+
+  if (palendram) console.log("This is a Palendram.")
+  else console.log("This is not Palendram.")
+}
+
+PalendramChecker();
+
+ ---------------------------------------------------------------------------------------------------------
+
+ 
+ 
 
 
 

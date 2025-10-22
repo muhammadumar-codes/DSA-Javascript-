@@ -136,7 +136,7 @@ while (i < j) {
   j--;
 }
 console.log(array);
-
+0
 -------------------------------------------------------------------------
 
 Question: We have taken the two varibles i ,j from starting of Array
@@ -145,7 +145,7 @@ if it is 1 it must to move forward to swap
 
 Solution:
 
-const array = [1, 1, 0, 1, 0, 0, 1, 0, 0];
+const array = [1, 1, , 1, 0, 0, 1, 0, 0];
 let i = 0,
   j = 0;
 while (i < array.length) {
