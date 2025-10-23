@@ -313,7 +313,34 @@ toggleString();
 
  ---------------------------------------------------------------------------------------------------------
 
- 
+ Question:How to check count character how much time it cames
+
+ function charCounter() {
+  const arr = new Array(128).fill(0);
+  const s = prompt("Enter Your What You Want  !");
+  if (!s) {
+    alert("Invlide input !");
+    return;
+  } else {
+    for (let i = 0; i < s.length - 1; i++) {
+      const index = s.charCodeAt(i);
+      arr[index] += 1;
+    }
+
+    for (let i = 0; i <= arr.length; i++) {
+      if (arr[i] > 0) {
+        console.log(`${String.fromCharCode(i)},  =: Appear at =: ${arr[i]}`);
+      }
+    }
+  }
+}
+charCounter();
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+
  
 
 
